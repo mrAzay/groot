@@ -1,0 +1,54 @@
+@import "./main.scss";
+
+.partners {
+    padding: 50px 0 87px;
+    .partners__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .partners__item {
+            @include sizes(214px, 106px);   
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 1px solid #d8d7d7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 35px;
+            
+        }
+    }
+    .partners__btn-wrapper {
+        text-align: center;
+        margin: 30px 0 168px;
+    }
+}
+
+// responsive partners page
+@media screen and (max-width: 990px) {
+    .partners {
+        padding: 21px 0 57px;
+        .partners__items {
+            .partners__item {
+                //padding: 20px 15px 10px;
+                max-width: 173px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+        .partners__btn-wrapper {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .partners {
+        .partners__items {
+            .partners__item {
+                max-width: 130px;
+            }
+        }
+    }
+}

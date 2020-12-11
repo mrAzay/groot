@@ -1,0 +1,10 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.vs
+
+node_modules/
+*/node_modules/
+package.lock.json
+makets/
+makets.zip

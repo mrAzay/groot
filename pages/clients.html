@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грузоперевозки для корпоративных клиентов от компании Groot</title>
+    <meta name="description" content="Специальные условия по грузоперевозкам для корпоративных клиентов от компании Groot!">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>  
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/clients.css">
+    <link rel="stylesheet" href="../css/modal-order.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__main container">
+                <div class="header__logo-wrapper">
+                    <a href="/">
+                                            <img class="logo header__logo" src="../img/logo.png" alt="грузовое такси - это Groot" title="грузовое такси - это Groot">
+
+                    </a>
+                </div>
+                <div class="header__phones">
+                    <p class="header__phone">+38 <span>(068)</span> 590-70-70</p>
+                    <p class="header__phone">+38 <span>(093)</span> 590-70-70 </p>
+                    <p class="header__phone">+38 <span>(095)</span> 590-70-70</p>
+                    <button class="header__phones-collapse-btn">
+                    </button>
+                </div>
+                <div class="header__input-wrapper">
+                    <input type="text" class="header__input">
+                </div>
+                <div class="header__login">
+                    <button class="header__login-btn">Войти</button>
+                </div>
+                <div class="header__icons">
+                    <a href="#"><img src="../img/facebook.svg" alt="facebook" title="facebook"></a>
+                    <a href="#"><img src="../img/twitter.svg" alt="twitter" title="twitter"></a>
+                    <a href="#"><img src="../img/telegram.svg" alt="telegram" title="telegram"></a>
+                    <a href="#"><img src="../img/instagram.svg" alt="instagram" title="instagram"></a>
+                </div>
+                <label for="burger" class="header__burger">
+                    <span></span>
+                </label>
+            </div>
+            <input id="burger" class="header__checkbox" type="checkbox">
+                
+            <div class="header__nav-wrapper">
+                <div class="container">
+                    <ul class="header__nav">
+                        <li><a href="index.html">Грузовое такси</a></li>
+                        <li><a href="#">Переезды</a></li>
+                        <li><a href="completed-orders.html">Перевозка грузов</a></li>
+                        <li><a href="types-cars.html">Виды машин</a></li>
+                        <li><a href="flat-moving.html">Услуги грузчиков</a></li>
+                        <li><a href="flat-moving-1.html">Дополнительные услуги</a></li>
+                        <li><a href="clients.html">Для корпоративных клиентов</a></li>
+                        <li><a href="#">Еще <img src="../img/see-also-arrow.svg" alt="еще" title="еще"></a></li>
+                     </ul>
+                </div>
+            </div>
+        </header>  
+        <div class="modals">
+            <div class="overlay"></div>
+            <div class="modal modal-login">
+                <h3 class="modal__title">Вход</h3>
+                <form class="modal__form">
+                    <input class="modal__input" placeholder="E-mail" type="email">
+                    <input class="modal__input" placeholder="Пароль" type="password">
+                    <button class="common-btn modal__button">Войти</button>
+                </form>
+                <div class="modal__link-wrapper">
+                    <a href="#" class="modal__forgot-link">Забыли пароль?</a>
+                </div>
+                <p class="modal__text">или</p>
+                <div class="modal__link-wrapper">
+                    <a href="#" class="modal__register-link">Зарегестрироваться</a>
+                </div>
+                <button class="modal__close">
+                    <img src="../img/close.png" alt="закрыть" title="закрыть">
+                </button>
+            </div>
+            <div class="modal modal-order">
+                <button class="modal-order-close">
+                    <img src="../img/close.png" alt="закрыть" title="закрыть">
+                </button>
+                <form action="">
+                    <fieldset class="modal-order__item">
+                    <label for="from">Откуда: адрес отправления</label>
+                    <input id="from" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="where">Куда: адрес назначения</label>
+                    <input id="where" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="description">Описани</label>
+                    <textarea id="description" class="modal__input"></textarea>
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="name">Имя</label>
+                    <input id="name" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="surname">Фамилия</label>
+                    <input id="surname" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="email">e-mail</label>
+                    <input id="email" type="text" class="modal__input">
+                    </fieldset>
+                  
+                    <button class="modal-push">Заказать</button>
+                </form>
+         
+            </div>
+        </div> 
+        <section class="content clients-page">
+            <div class="container">
+                <div class="content__breadcrumbs">
+                    <a href="/" class="content__breadcrumbs-item">
+                        Главная /
+                    </a>
+                    <a href="#" class="content__breadcrumbs-item current-active">Для корпоративных клиентов</a>
+                </div>
+                <div class="info">
+                    <h1 class="info__title">Лучшие перевозчики 
+                        для бизнеса</h1>
+                    <p class="info__subtitle">
+                        Тысячи водителей доступны вам в прямом эфире с постоплатой и кэшбеком
+                    </p>
+                    <div class="info__buttons">
+                        <button class="info__left-order common-btn order-btn">
+                            Оставить заявку
+                        </button>
+                        <button class="info__register show-more-btn">
+                            Регистрация
+                        </button>
+                    </div>
+                    <div class="info__items">
+                        <div class="info__item">
+                            <div class="info__icon-wrapper">
+                                <img src="../img/shield.svg" alt="ответственность" title="ответственность" class="info__img">
+                            </div>
+                            <h4 class="info__item-title">
+                                Несем полную ответственность
+                            </h4>
+                            <p class="info__item-text">
+                                Вы заключаете договор с нами, мы 
+                                несем ответственность за каждого 
+                                исполнителя
+                            </p>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__icon-wrapper">
+                                <img src="../img/diplom.svg" alt="Проверенные водители" title="Проверенные водители" class="info__img">
+                            </div>
+                            <h4 class="info__item-title">
+                                Проверенные водители
+                            </h4>
+                            <p class="info__item-text">
+                                100% машин прошли проверку 
+                                и готовы для работы по 
+                                стандартам сервиса
+                            </p>
+                        </div>
+                        <div class="info__item">
+                            <div class="info__icon-wrapper">
+                                <img src="../img/wallet.svg" alt="Платите потом" title="Платите потом" class="info__img">
+                            </div>
+                            <h4 class="info__item-title">
+                                Платите потом
+                            </h4>
+                            <p class="info__item-text">
+                                У нас можно платить 
+                                наличными, картой или на 
+                                расчетный счет
+                            </p>
+                        </div>
+                    </div>
+                    <img src="../img/merc-bus.png" alt="грузовое такси" title="грузовое такси" class="info__bus-img">
+                </div>
+                <div class="clients">
+                    <h4 class="clients__caption">
+                        Наши клиенты
+                    </h4>
+                    <div class="clients__images">
+                        <img class="clients__img" alt="Агромат" title="Агромат" src="../img/agromat-bw.jpg">
+                        <img class="clients__img" alt="Ашан" title="Ашан" src="../img/ashan-bw.jpg">
+                        <img class="clients__img" alt="Эпицентр" title="Эпицентр" src="../img/epicenter-bw.jpg">
+                        <img class="clients__img" alt="Merx" title="Merx" src="../img/merx-bw.jpg">
+                        <img class="clients__img" alt="Resteq" title="Resteq" src="../img/resteq-bw.jpg">
+                        <img class="clients__img" alt="Твоя шина" title="Твоя шина" src="../img/shina-bw.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="advances">
+                <div class="advances__column">
+                    <img class="advances__phone-img" src="../img/phone.png" alt="телефон заказа грузового такси" title="телефон заказа грузового такси">
+                    <div class="container">
+                        <h3 class="advances__title">
+                            Больше никакой бумаги!
+                        </h3>
+                        <p class="advances__text">
+                            Заполните данные Вашей компании один раз и получайте 
+                            ежемесячные акты и счета на почту автоматически!
+                        </br></br>
+                            Работаем с отсрочкой платежа!
+                        </br></br>
+                            Когда от милой моей долины поднимается пар и полдневное 
+                            солнце стоит над непроницаемой чащей темного леса и лишь 
+                            редкий луч проскальзывает в его святая святых
+                        </p>
+                    </div>
+                </div>
+                <div class="advances__column">
+                    <div class="container">
+                        <div class="advances__items">
+                            <div class="advances__item">
+                                <div class="advances__img-wrapper">
+                                    <img class="advances__icon" alt="Трекер" title="Трекер" src="../img/tracker.svg">
+                                </div>
+                                <div class="advances__info">
+                                    <h6 class="advances__item-subtitle">
+                                        Просто и удобно
+                                    </h6>
+                                    <p class="advances__item-text">
+                                        Удобный и простой контроль Ваших перевозок.
+                                        Полный отчет
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advances__item">
+                                <div class="advances__img-wrapper">
+                                    <img class="advances__icon" alt="Менеджер" title="Менеджер" src="../img/manager.svg">
+                                </div>
+                                <div class="advances__info">
+                                    <h6 class="advances__item-subtitle">
+                                        Персональный менеджер
+                                    </h6>
+                                    <p class="advances__item-text">
+                                        Профессиональный консталинг по оптимизации
+                                        ваших транспортных задач
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="advances__item">
+                                <div class="advances__img-wrapper">
+                                    <img class="advances__icon" alt="Календарь" title="Календарь" src="../img/timetable.svg">
+                                </div>
+                                <div class="advances__info">
+                                    <h6 class="advances__item-subtitle">
+                                        Круглосуточно
+                                    </h6>
+                                    <p class="advances__item-text">
+                                        Сервис работает круглосуточно 24 часа, 7 дней
+                                        в неделю , 365 дней в году
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-block">
+                <div class="container">
+                    <h3 class="common-title">
+                        GROOT удобнее обычных транспотрных компаний,
+     как электронная почта удобнее за бумажную!
+                    </h3>
+                    <table class="table-block__table">
+                        <thead>
+                            <tr>
+                                <th>
+    
+                                </th>
+                                <th class="table-block__caption">
+                                    Транспортная компания
+                                </th>
+                                <th>
+                                    <img class="table-block__logo" src="../img/logo.svg" alt="Грузовое такси - это groot" title="Грузовое такси - это groot">
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/delivery-car.svg" alt="доставка" title="доставка" class="table-block__img">
+                                    <span>Количество авто</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">30 -40</td>
+                                <td class="table-block__caption">2000 +</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/wallet-icon.svg" alt="оплата" title="оплата" class="table-block__img">
+                                    <span>Оплата</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">Наличные</td>
+                                <td class="table-block__caption">Постоплата, безналичный расчет 
+                                    с ПДВ, наличные, банковская карта</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/umbrella.svg" alt="надежность" title="надежность" class="table-block__img">
+                                        <span>Надежные исполнители</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">
+                                    <img class="table-block__no" src="../img/close.svg" alt="нет" title="нет">
+                                </td>
+                                <td class="table-block__caption">
+                                    <img class="table-block__yes" src="../img/galochka.svg" alt="да" title="да">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/money.svg" alt="минимальная стоимость" title="минимальная стоимость" class="table-block__img">
+                                        <span>Минимальная стоимость</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">400 грн</td>
+                                <td class="table-block__caption">165 грн</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/order.svg" alt="заказы" title="заказы" class="table-block__img">
+                                        <span>Заказы</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">Через телефон</td>
+                                <td class="table-block__caption">Приложение, веб-сайт, телефон</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/taxi.svg" alt="подача авто" title="подача авто" class="table-block__img">
+                                        <span>Подача авто</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">2 часа</td>
+                                <td class="table-block__caption">20 минут</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-block__item">
+                                        <img src="../img/document.svg" alt="документация" title="документация" class="table-block__img">
+                                        <span>Документация</span>
+                                    </div>
+                                </td>
+                                <td class="table-block__caption">Бумажные документы с отправкой</td>
+                                <td class="table-block__caption">Автоматизированая электронная отчетность</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="business">
+                <div class="container">
+                    <h3 class="common-title">
+                        Кому мы подходим прямо сейчас
+                    </h3>
+                    <h6 class="business__subtitle">
+                        Подключите свой бизнес за 24 часа и начните предоставлять уникальный сервис экспресс-доставки вашим клиентам
+                    </h6>
+                    <div class="business__items">
+                        <div class="business__item">
+                            <img class="business__img" src="../img/brick.svg" alt="Строительные компании" title="Строительные компании">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Строительные компании
+                                </h5>
+                                <div class="business__item-count">
+                                    43 компании
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img" src="../img/car-parts.svg" alt="Автозапчасти" title="Автозапчасти">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Автозапчасти
+                                </h5>
+                                <div class="business__item-count">
+                                    15 компаний
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img" src="../img/screen.svg" alt="Интернет магазины" title="Интернет магазины">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Интернет магазины
+                                </h5>
+                                <div class="business__item-count">
+                                    53 магазина
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img" src="../img/shopping-basket.svg" alt="Магазины" title="Магазины">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Магазины
+                                </h5>
+                                <div class="business__item-count">
+                                    65 магазина
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/delivery.svg" alt="Транспортные компании" title="Транспортные компании">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Транспортные компании
+                                </h5>
+                                <div class="business__item-count">
+                                    27 компаний
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/acoustic-guitar.svg" alt="Event агенства" title="Event агенства">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Event агенства
+                                </h5>
+                                <div class="business__item-count">
+                                    11 агенств
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/sofa.svg" alt="Мебельные магазины" title="Мебельные магазины">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Мебельные магазины
+                                </h5>
+                                <div class="business__item-count">
+                                    25 магазинов
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/equipment.svg" alt="Оборудование" title="Оборудование">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Оборудование
+                                </h5>
+                                <div class="business__item-count">
+                                    9 компаний
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img" src="../img/paper-bag.svg" alt="Крафтовые производства" title="Крафтовые производства">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Крафтовые производства
+                                </h5>
+                                <div class="business__item-count">
+                                    19 компаний
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/gardening-tools.svg" alt="Товары для сада" title="Товары для сада">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Товары для сада
+                                </h5>
+                                <div class="business__item-count">
+                                    11 компаний
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/gym.svg" alt="Спорттовары" title="Спорттовары">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Спорттовары
+                                </h5>
+                                <div class="business__item-count">
+                                    13 компаний
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business__item">
+                            <img class="business__img  " src="../img/briefcase.svg" alt="Ваш бизнес" title="Ваш бизнес">
+                            <div class="business__item-info">
+                                <h5 class="business__item-title">
+                                    Ваш бизнес
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="container">
+                    <h3 class="slider__title">
+                        Отзывы
+                    </h3>
+                    <div class="slider__content">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                                <div class="slider__item-name">
+                                    Дмитрий
+                                </div>
+                                <div class="slider__item-details">
+                                    <div class="slider__item-date">
+                                        01.04.2020
+                                    </div>
+                                    <div class="slider__stars">
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="slider__item-text">
+                                    Карусель из 2-4-6 последних отзывов из 
+                                    раздела Отзывы. Должна быть большая 
+                                    кнопка призыв перейти и почитать все 
+                                    отзывы. Источник отзывов – любой (отзывы 
+                                    из приложения(т.е. из Google Play Market), 
+                                    из аккаунта Google My Business, отзывы из 
+                                    формы на сайте, прошедшие модерацию)
+                                </p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-name">
+                                    Дмитрий
+                                </div>
+                                <div class="slider__item-details">
+                                    <div class="slider__item-date">
+                                        01.04.2020
+                                    </div>
+                                    <div class="slider__stars">
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="slider__item-text">
+                                    Карусель из 2-4-6 последних отзывов из 
+                                    раздела Отзывы. Должна быть большая 
+                                    кнопка призыв перейти и почитать все 
+                                    отзывы. Источник отзывов – любой (отзывы 
+                                    из приложения(т.е. из Google Play Market), 
+                                    из аккаунта Google My Business, отзывы из 
+                                    формы на сайте, прошедшие модерацию)
+                                </p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-name">
+                                    Дмитрий
+                                </div>
+                                <div class="slider__item-details">
+                                    <div class="slider__item-date">
+                                        01.04.2020
+                                    </div>
+                                    <div class="slider__stars">
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="slider__item-text">
+                                    Карусель из 2-4-6 последних отзывов из 
+                                    раздела Отзывы. Должна быть большая 
+                                    кнопка призыв перейти и почитать все 
+                                    отзывы. Источник отзывов – любой (отзывы 
+                                    из приложения(т.е. из Google Play Market), 
+                                    из аккаунта Google My Business, отзывы из 
+                                    формы на сайте, прошедшие модерацию)
+                                </p>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item-name">
+                                    Дмитрий
+                                </div>
+                                <div class="slider__item-details">
+                                    <div class="slider__item-date">
+                                        01.04.2020
+                                    </div>
+                                    <div class="slider__stars">
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                        <span class="slider__star">
+                                            <img src="../img/star-icon.svg" alt="rating star" title="rating start">
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="slider__item-text">
+                                    Карусель из 2-4-6 последних отзывов из 
+                                    раздела Отзывы. Должна быть большая 
+                                    кнопка призыв перейти и почитать все 
+                                    отзывы. Источник отзывов – любой (отзывы 
+                                    из приложения(т.е. из Google Play Market), 
+                                    из аккаунта Google My Business, отзывы из 
+                                    формы на сайте, прошедшие модерацию)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__arrows">
+                            <button class="slider__arrow prev-slide">
+                                <img src="../img/prev-arrow.svg" alt="arrow left" title="arrow left">
+                            </button>
+                            <button class="slider__arrow next-slide">
+                                <img src="../img/arrow-next.svg" alt="arrow right" title="arrow right">
+                            </button>
+                        </div>
+                        <div class="slider__btn-wrapper">
+                            <a href="reviews.html" class="slider__show-more show-more-btn">
+                                Читать все отзывы
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__company">
+                    <div class="footer__company-title">
+                        <div class="footer__logo">
+                            <a href="#">
+                                                    <img class="logo header__logo" src="../img/logo.png" alt="грузовое такси - это Groot" title="грузовое такси - это Groot">
+
+                            </a>
+                        </div>
+                        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius iaculis
+                            nibh
+                            sodales faucibus. </p>
+                    </div>
+                    <p class="footer__rights">©2020 GROOT</p>
+                </div>
+                <div class="footer__services">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__nav">
+                        <li><a href="index.html">Грузовое такси</a></li>
+                        <li><a href="#">Переводы</a></li>
+                        <li><a href="completed-orders.html">Перевозка грузов</a></li>
+                        <li><a href="types-cars.html">Виды машин</a></li>
+                        <li><a href="flat-moving.html">Услуги грузчиков</a></li>
+                        <li><a href="flat-moving-1.html">Дополнительные услуги</a></li>
+                        <li><a href="clients.html">Для корпоративных клиентов</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__title">Меню</h4>
+                    <ul class="footer__nav">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Условия оплаты и доставки</a></li>
+                        <li><a href="news.html">Статьи/Новости</a></li>
+                        <li><a href="completed-orders.html">Выполненные переводы</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="questions-page.html">Часто задаваемые вопросы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__routes">
+                    <h4 class="footer__title">Маршруты</h4>
+                    <ul class="footer__nav">
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Киевская область</a></li>
+                        <li><a href="#">Львов</a></li>
+                        <li><a href="#">Харьков</a></li>
+                        <li><a href="#">Тернополь</a></li>
+                        <li><a href="#">Днепр</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <div>
+                        <h4 class="footer__title">Контакты</h4>
+                        <ul class="footer__nav">
+                            <li><a href="tel:+38(068) 590-70-70">+38<span class="footer__nav-marker">(068)</span> 590-70-70</a></li>
+                            <li><a href="tel:+38(093) 590-70-70">+38<span class="footer__nav-marker">(093)</span> 590-70-70</a></li>
+                            <li><a href="tel:+38(095) 590-70-70">+38<span class="footer__nav-marker">(095)</span> 590-70-70</a></li>
+                            <li><a href="mailto:support@groot.net.ua">support<span class="footer__nav-marker">@groot.net.ua</span></a></li>
+                            <li>Время работы кол центра  </br> с <span class="footer__nav-marker">8:00-22:00</span>
+                                <span class="footer__nav-text">(заказ через </br> мобильное приложение можно </br> сделать круглосуточно)</span> </li>
+                        </ul>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#"><img src="../img/facebook.svg" alt="facebook" title="facebook"></a>
+                        <a href="#"><img src="../img/twitter.svg" alt="twitter" title="twitter"></a>
+                        <a href="#"><img src="../img/telegram.svg" alt="telegram" title="telegram"></a>
+                    </div>
+                </div>
+                <div class="footer__year">©2020 GROOT</div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/slick.min.js"></script>
+    <script src="../js/modal-login.js"></script>
+    <script src="../js/reviews-slider.js"></script>
+    <script src="../js/modal-order.js"></script>
+</body>
+
+</html>

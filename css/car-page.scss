@@ -1,0 +1,165 @@
+@import "../css/main.scss";
+
+.car-page {
+    background-image: url('../img/bg-road-2.png');
+    background-repeat: no-repeat;
+    background-position: center 100px;
+}
+
+.car {
+    margin-top: 83px;
+    .car__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .car__details {
+            display: flex;
+            align-items: center;
+        }
+        .car__info {
+            margin-right: 80px;
+            .car__price {
+                color: black;
+                font-size: 24px;
+                margin-bottom: 30px;
+                .car__name {
+                    color: $main-color;
+                    font-weight: 900;
+                }
+            }
+            .car__feed {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .car__trafic {
+                margin-top: 12px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+        .car__order {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: 13px 42px;
+            border-radius: 24px;
+            border: 1px solid #6db451;
+            background-color: #6db451;
+            font-size: 14px;
+        }
+    }
+    .car__characteristic {
+        margin: 65px 0 100px;
+        .car__subtitle {
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .car__details {
+            margin: 28px 0 0 22px;
+            .car__detail {
+                font-size: 16px;
+                font-weight: 300;
+                position: relative;
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+                &::before {
+                    @include sizes(6px, 6px);
+                    content: '';
+                    background: $main-color;
+                    position: absolute;
+                    left: -15px;
+                    border-radius: 50%;
+                    transform: translateY(80%);
+                }
+            }
+        }
+        .car__text {
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 46px;
+            line-height: 24px;
+        }
+    }
+}
+
+// responsive car-page
+@media screen and (max-width: 990px) {
+    .car {
+        margin-top: 40px;
+        .car__main {
+            .car__img {
+                width: 340px;
+            }
+            .car__details {
+                flex-direction: column;
+                align-items: flex-start;
+                .car__info {
+                     margin-right: 0;
+                }
+                .car__order {
+                    margin-top: 20px;
+                }
+                .car__price {
+                    font-size: 18px;
+                }
+                .car__feed {
+                    font-size: 14px;
+                }
+                .car__trafic {
+                    font-size: 12px;
+                }
+                .car__order {
+                    font-size: 12px;
+                }
+            }
+        }
+        .car__characteristic {
+            .car__subtitle {
+                font-size: 16px;
+            }
+            .car__details {
+                .car__detail {
+                    font-size: 14px;
+                }
+            }
+            .car__text {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .car {
+        .car__main {
+            flex-direction: column;
+            align-items: flex-start;
+            .car__img {
+                width: 100%;
+                margin-bottom: 44px;
+            }
+            .car__details {
+                .car__info {
+                    .car__price {
+                        font-size: 16px;
+                    }
+                    .car__feed {
+                        font-size: 12px;
+                    }
+                    .car__trafic {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .car__characteristic {
+            .car__subtitle {
+                font-size: 14px;
+            }
+            .car__details .car__detail, .car__text {
+                font-size: 12px;
+            }
+        }
+    }
+}

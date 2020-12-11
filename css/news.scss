@@ -1,0 +1,45 @@
+@import "./main.scss";
+
+.advices {
+    padding-top: 0;
+}
+@media screen and (max-width: 748px) {
+    .advices {
+        .advices__content {
+            .advices__main {
+                display: block;
+                margin-right: 0;
+                min-height: 323px;
+                background-position-x: center;
+            }
+            .advices__additional {
+                .advices__item {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 568px) {
+    .advices {
+        .advices__content {
+            .advices__main {
+                .advices__overlay {
+                    padding: 40px 20px;
+                }
+                .advices__subtitle {
+                    font-size: 18px;
+                }
+                .advices__text {
+                    font-size: 11px;
+                    line-height: 18px;
+                }
+            }
+            .advices__additional {
+                .advices__item {
+                    display: none;
+                }
+            }
+        }
+    }
+}

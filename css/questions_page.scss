@@ -1,0 +1,104 @@
+@import "./main.scss";
+
+.questions-page {
+    padding-bottom: 103px;
+    background: url('../img/bg-cube.png') -90px 70px no-repeat,
+                    url('../img/bg-road.png') right 0 top 550px no-repeat, rgba(246, 248, 247, 0.4) ;
+
+}
+
+.questions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .questions__column {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .questions__item {
+        @include transition();
+        border: 1px solid $button-color;
+        border-radius: 5px;
+        padding: 17px 25px;
+        box-sizing: border-box;
+        width: 95%;
+        margin-bottom: 16px;
+        background: white;
+        .questions__item-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .questions__text {
+            font-size: 16px;
+        }
+        .questions__show-more {
+            background: transparent;
+            font-size: 24px;
+            font-weight: 800;
+            color: $button-color;
+        }
+        .questions__answer {
+            display: none;
+            margin-top: 30px;
+            .questions__answer-list {
+                margin: 22px 0 0 22px;
+                position: relative;
+                .questions__answer-item::before {
+                    @include sizes(6px, 6px);
+                    content: '';
+                    position: absolute;
+                    background: #0b2239;
+                    opacity: 0.43;
+                    border-radius: 50%;
+                    left: -15px;
+                    transform: translateY(50%);
+                }
+            }
+        }
+    }
+    .active {
+        .questions__item-title {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+        .questions__text {
+            font-weight: 800;
+            padding-bottom: 10px;
+        }
+        .questions__answer {
+            display: block;
+        }
+    }
+}
+
+//responsive questions page
+@media screen and (max-width: 868px) {
+    .questions {
+        flex-direction: column;
+        .questions__column {
+            width: 100%;
+            .questions__item {
+                padding: 20px;
+                .questions__text, .questions__answer {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .questions {
+        .questions__column {
+            .questions__item {
+                .questions__text, .questions__answer {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

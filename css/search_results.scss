@@ -1,0 +1,70 @@
+@import "./main.scss";
+
+.results-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.results {
+    padding: 33px 0 20px;
+    .results__coincidence {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 33px;
+        .results__count {
+            color: $button-color;
+            font-weight: 900;
+        }
+    }
+    .results__items {
+        display: flex;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        .results__item {
+            @include transition();
+            cursor: pointer;
+            padding: 16px 25px;
+            background: $button-color;
+            border-radius: 24px;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            margin: 0 10px 32px;
+            &:hover {
+                background-color: #579a3d;
+            }
+        }
+    }
+    .results__links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 72px;
+        .results__link {
+            @include transition();
+            color: $link-color;
+            text-decoration: underline;
+            font-size: 14px;
+            margin-right: 40px;
+            margin-bottom: 26px;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+    .results__query {
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .results {
+        .results__coincidence, .results__items .results__item,
+        .results__links .results__link {
+            font-size: 12px;
+        }
+        .results__links {
+            margin-top: 15px;
+        }
+    }
+}

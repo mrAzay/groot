@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды машин для грузоперевозок от компании Groot</title>
+    <meta name="description" content="Удобные микроавтобусы и фуры для грузоперевозок и переездов от компании грузового такси Groot! Отличные цены, быстрая подача машины, квалифицированные грузчики. Заказывайте!">
+    <link rel="stylesheet"
+    href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/modal-order.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__main container">
+                <div class="header__logo-wrapper">
+                    <a href="/">
+                                            <img class="logo header__logo" src="../img/logo.png" alt="грузовое такси - это Groot" title="грузовое такси - это Groot">
+
+                    </a>
+                </div>
+                <div class="header__phones">
+                    <p class="header__phone">+38 <span>(068)</span> 590-70-70</p>
+                    <p class="header__phone">+38 <span>(093)</span> 590-70-70 </p>
+                    <p class="header__phone">+38 <span>(095)</span> 590-70-70</p>
+                    <button class="header__phones-collapse-btn">
+                    </button>
+                </div>
+                <div class="header__input-wrapper">
+                    <input type="text" class="header__input">
+                </div>
+                <div class="header__login">
+                    <button class="header__login-btn">Войти</button>
+                </div>
+                <div class="header__icons">
+                    <a href="#"><img src="../img/facebook.svg" alt="facebook" title="facebook"></a>
+                    <a href="#"><img src="../img/twitter.svg" alt="twitter" title="twitter"></a>
+                    <a href="#"><img src="../img/telegram.svg" alt="telegram" title="telegram"></a>
+                    <a href="#"><img src="../img/instagram.svg" alt="instagram" title="instagram"></a>
+                </div>
+                <label for="burger" class="header__burger">
+                    <span></span>
+                </label>
+            </div>
+            <input id="burger" class="header__checkbox" type="checkbox">
+                
+            <div class="header__nav-wrapper">
+                <div class="container">
+                    <ul class="header__nav">
+                        <li><a href="index.html">Грузовое такси</a></li>
+                        <li><a href="#">Переезды</a></li>
+                        <li><a href="completed-orders.html">Перевозка грузов</a></li>
+                        <li><a href="types-cars.html">Виды машин</a></li>
+                        <li><a href="flat-moving.html">Услуги грузчиков</a></li>
+                        <li><a href="flat-moving-1.html">Дополнительные услуги</a></li>
+                        <li><a href="clients.html">Для корпоративных клиентов</a></li>
+                        <li><a href="#">Еще <img src="../img/see-also-arrow.svg" alt="еще" title="еще"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="modals">
+            <div class="overlay"></div>
+            <div class="modal modal-login">
+                <h3 class="modal__title">Вход</h3>
+                <form class="modal__form">
+                    <input class="modal__input" placeholder="E-mail" type="email">
+                    <input class="modal__input" placeholder="Пароль" type="password">
+                    <button class="common-btn modal__button">Войти</button>
+                </form>
+                <div class="modal__link-wrapper">
+                    <a href="#" class="modal__forgot-link">Забыли пароль?</a>
+                </div>
+                <p class="modal__text">или</p>
+                <div class="modal__link-wrapper">
+                    <a href="#" class="modal__register-link">Зарегестрироваться</a>
+                </div>
+                <button class="modal__close">
+                    <img src="../img/close.png" alt="закрыть" title="закрыть">
+                </button>
+            </div>
+            <div class="modal modal-order">
+                <button class="modal-order-close">
+                    <img src="../img/close.png" alt="закрыть" title="закрыть">
+                </button>
+                <form action="">
+                    <fieldset class="modal-order__item">
+                    <label for="from">Откуда: адрес отправления</label>
+                    <input id="from" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="where">Куда: адрес назначения</label>
+                    <input id="where" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="description">Описани</label>
+                    <textarea id="description" class="modal__input"></textarea>
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="name">Имя</label>
+                    <input id="name" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="surname">Фамилия</label>
+                    <input id="surname" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" type="text" class="modal__input">
+                    </fieldset>
+                    <fieldset class="modal-order__item">
+                    <label for="email">e-mail</label>
+                    <input id="email" type="text" class="modal__input">
+                    </fieldset>
+                  
+                    <button class="modal-push">Заказать</button>
+                </form>
+         
+            </div>
+        </div>
+        <section class="content container">
+            <div class="content__breadcrumbs">
+                <a href="/" class="content__breadcrumbs-item">
+                    Главная /
+                </a>
+                <a href="#" class="content__breadcrumbs-item current-active">Виды машин</a>
+            </div>
+            <h1 class="content__title">Виды машин</h1>
+            <div class="content__cars">
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-1.png" alt="Пикап" title="Пикап">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Пикап</span>
+                            - 165 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 7 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 3 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 1.2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 600кг
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img"  src="../img/car-2.png" alt="Миннибус" title="Миннибус">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Миннибус  </span>
+                            - 195 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 7 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 10 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 2.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.7 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 1000кг
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img"  src="../img/car-3.png" alt="Максибус" title="Максибус">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Максибус</span>
+                            - 245 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 8 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 16 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 4.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 3 т.
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-4.png" alt="Экстра" title="Экстра">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Экстра</span>
+                            - 200 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            мин. заказ - 2 часа + подача = 590грн
+                        </p>
+                        <p class="car-block__trafic">(после второго часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 10 грн/км (считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 20 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 4.2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 2.1 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 2.3 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 1,5 т.
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-1.png" alt="Пикап" title="Пикап">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Пикап</span>
+                            - 165 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 7 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 3 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 1.2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 600кг
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-4.png" alt="Экстра" title="Экстра">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Экстра</span>
+                            - 200 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            мин. заказ - 2 часа + подача = 590грн
+                        </p>
+                        <p class="car-block__trafic">(после второго часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 10 грн/км (считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 20 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 4.2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 2.1 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 2.3 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 1,5 т.
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-1.png" alt="Пикап" title="Пикап">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Пикап</span>
+                            - 165 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 7 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 3 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 1.2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 600кг
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-2.png" alt="Миннибус" title="Миннибус">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Миннибус  </span>
+                            - 195 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 7 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 10 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 2.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.7 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 1000кг
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-3.png" alt="Максибус" title="Максибус">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Максибус</span>
+                            - 245 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            ПОДАЧА БЕСПЛАТНО!
+                        </p>
+                        <p class="car-block__trafic">(после первого часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 8 грн/км (за городом считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 16 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 4.5 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 1.8 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 3 т.
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__car car-block">
+                    <div class="car-block__img-wrapper">
+                        <img class="car-block__img" src="../img/car-4.png" alt="Экстра" title="Экстра">
+                    </div>
+                    <div class="car-block__info">
+                        <p class="car-block__details">
+                            <span class="car-block__name">Экстра</span>
+                            - 200 грн/час
+                        </p>
+                        <p class="car-block__feed">
+                            мин. заказ - 2 часа + подача = 590грн
+                        </p>
+                        <p class="car-block__trafic">(после второго часа идет поминутная тарификация)</span>
+                        <ul class="car-block__characteristic">
+                            Характеристики:
+                            <li class="car-block__characteristic-item">
+                                свыше 5 км - 10 грн/км (считается туда и обратно),
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                объём кузова до 20 м3,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                длина - до 4.2 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                ширина - до 2.1 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                высота - до 2.3 м,
+                            </li>
+                            <li class="car-block__characteristic-item">
+                                грузоподъёмность - до 1,5 т.
+                            </li>
+                        </ul>
+                        <div class="car-block__btn-wrapper">
+                            <button class="car-block__button order-btn">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__company">
+                    <div class="footer__company-title">
+                        <div class="footer__logo">
+                            <a href="#">
+                                                    <img class="logo header__logo" src="../img/logo.png" alt="грузовое такси - это Groot" title="грузовое такси - это Groot">
+
+                            </a>
+                        </div>
+                        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius iaculis
+                            nibh
+                            sodales faucibus. </p>
+                    </div>
+                    <p class="footer__rights">©2020 GROOT</p>
+                </div>
+                <div class="footer__services">
+                    <h4 class="footer__title">Услуги</h4>
+                    <ul class="footer__nav">
+                        <li><a href="index.html">Грузовое такси</a></li>
+                        <li><a href="#">Переводы</a></li>
+                        <li><a href="completed-orders.html">Перевозка грузов</a></li>
+                        <li><a href="types-cars.html">Виды машин</a></li>
+                        <li><a href="flat-moving.html">Услуги грузчиков</a></li>
+                        <li><a href="flat-moving-1.html">Дополнительные услуги</a></li>
+                        <li><a href="clients.html">Для корпоративных клиентов</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <h4 class="footer__title">Меню</h4>
+                    <ul class="footer__nav">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Условия оплаты и доставки</a></li>
+                        <li><a href="news.html">Статьи/Новости</a></li>
+                        <li><a href="completed-orders.html">Выполненные переводы</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="questions-page.html">Часто задаваемые вопросы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__routes">
+                    <h4 class="footer__title">Маршруты</h4>
+                    <ul class="footer__nav">
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Киевская область</a></li>
+                        <li><a href="#">Львов</a></li>
+                        <li><a href="#">Харьков</a></li>
+                        <li><a href="#">Тернополь</a></li>
+                        <li><a href="#">Днепр</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <div>
+                        <h4 class="footer__title">Контакты</h4>
+                        <ul class="footer__nav">
+                            <li><a href="tel:+38(068) 590-70-70">+38<span class="footer__nav-marker">(068)</span> 590-70-70</a></li>
+                            <li><a href="tel:+38(093) 590-70-70">+38<span class="footer__nav-marker">(093)</span> 590-70-70</a></li>
+                            <li><a href="tel:+38(095) 590-70-70">+38<span class="footer__nav-marker">(095)</span> 590-70-70</a></li>
+                            <li><a href="mailto:support@groot.net.ua">support<span class="footer__nav-marker">@groot.net.ua</span></a></li>
+                            <li>Время работы кол центра  </br> с <span class="footer__nav-marker">8:00-22:00</span>
+                                <span class="footer__nav-text">(заказ через </br> мобильное приложение можно </br> сделать круглосуточно)</span> </li>
+                        </ul>
+                    </div>
+                    <div class="footer__icons">
+                        <a href="#"><img src="../img/facebook.svg" alt="facebook" title="facebook"></a>
+                        <a href="#"><img src="../img/twitter.svg" alt="twitter" title="twitter"></a>
+                        <a href="#"><img src="../img/telegram.svg" alt="telegram" title="telegram"></a>
+                    </div>
+                </div>
+                <div class="footer__year">©2020 GROOT</div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/modal-login.js"></script>
+    <script src="../js/modal-order.js"></script>
+</body>
+</html>

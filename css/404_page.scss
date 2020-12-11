@@ -1,0 +1,84 @@
+@import "./main.scss";
+.error-page {
+    background-blend-mode: multiply;
+    padding: 84px 0 135px;
+    position: relative;
+    background-image: url('../img/bg-road-6.png');
+    background-repeat: no-repeat;
+    background-position: top -200px right 100px;
+    z-index: 100;
+    .error-page__img {
+        position: absolute;
+        right: 0px;
+        top: 162px;
+    }
+}
+.content {
+    padding: 0;
+}
+.page-404 {
+    max-width: 500px;
+    text-align: center;
+    margin-left: 53px;
+    .common-btn {
+        padding: 12px 44px;
+    }
+    .page-404__subtitle {
+        font-size: 18px;
+        font-weight: 900;
+        margin-right: 100px;
+    }
+    .page-404__title {
+        font-size: 170px;
+        font-weight: 500;
+        color: $button-color;
+    }
+    .page-404__text {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 40px 0 15px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .page-404 {
+        margin-left: 0;
+        max-width: 330px;
+        .page-404-subtitle {
+            font-size: 14px;
+        }
+        .page-404__title {
+            font-size: 130px;
+        }
+        .page-404__text {
+            font-size: 12px;
+            margin: 20px 0;    
+        }
+    }
+    .error-page {
+        .error-page__img {
+            //@include sizes(384px, 225px);
+            width: 50%;
+            right: -50px;
+            top: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .page-404 {
+        margin: 0 auto;
+    }
+    .error-page {
+        padding-bottom: 200px;
+        .error-page__img {
+            width: 384px;
+            top: 325px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+    } 
+}

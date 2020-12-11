@@ -1,0 +1,148 @@
+@import "./main.scss";
+
+.reviews {
+    padding-bottom: 89px;
+    background-image: url('../img/bg-road-2.png');
+    background-repeat: no-repeat;
+    background-position: bottom -260px right 0;
+    .reviews__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .reviews__captions {
+            display: flex;
+            align-items: center;
+            .reviews__caption:first-child {
+                margin-right: 100px;
+            }
+            .reviews__caption {
+                display: flex;
+                align-items: center;
+            }
+            .reviews__count {
+                color: $button-color;
+                font-weight: 800;
+            }
+        }
+        .add-review {
+            padding: 15px 38px;
+            font-size: 12px;
+        }
+    }
+    .reviews__stars {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .reviews__items {
+        
+        .reviews__item {
+            margin-top: 19px;
+            border-radius: 10px;
+            border: 1px solid #c4c4c4;
+            background-color: #ffffff;
+            padding: 22px 60px 45px 26px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: flex-start;
+            .reviews__img-wrapper {
+                margin-right: 24px;
+                border-radius: 50%;
+                border: 3px solid $button-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .reviews__details {
+                margin-top: 14px;
+                .reviews__details-item {
+                    display: flex;
+                    padding: 12px 0;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+                    .reviews__key {
+                        min-width: 140px;
+                        font-size: 12px;
+                        opacity: 0.64;
+                    }
+                    .reviews__value {
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-size: 14px;  
+                        line-height: 20px;  
+                        display: flex;
+                        align-items: center;
+                    }
+                    .reviews__name {
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .reviews__btn-wrapper {
+        margin-top: 65px;
+        text-align: center;
+    }
+}
+
+//responsive reviews page
+@media screen and (max-width: 990px) {
+    .reviews {
+        .reviews__title {
+            .reviews__caption {
+                font-size: 12px;
+            }
+        }
+        .reviews__items {
+            .reviews__item {
+                .reviews__details .reviews__details-item {
+                    .reviews__value, .reviews__name {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .reviews {
+        .reviews__title {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 24px;
+            .reviews__captions {
+                flex-direction: column;
+                align-items: flex-start;
+                .reviews__caption {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .reviews__items {
+            .reviews__item {
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .reviews {
+        .reviews__items {
+            .reviews__item {
+                .reviews__details {
+                    .reviews__details-item {
+                        flex-direction: column;
+                        .reviews__key {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

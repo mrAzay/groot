@@ -1,0 +1,92 @@
+@import "./main.scss";
+
+.cabinet {
+    display: flex;
+    padding: 93px 0 100px;
+    .cabinet__sidebar {
+        width: 265px;
+        margin-right: 48px;
+        border-right: 1px solid rgba(19,19,19, 0.13);
+        .cabinet__list {
+            .cabinet__list-item {
+                margin-bottom: 45px;
+                .cabinet__list-link {
+                    @include transition();
+                    font-size: 18px;
+                    font-weight: 300;
+                    color: $cabinet-color;
+                    text-decoration: none;
+                }
+                .cabinet__list-link:hover, .active {
+                    color: $button-color;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+    .cabinet__main {
+        margin: 0 auto;
+        .cabinet__item {
+            margin-bottom: 50px;
+            .cabinet__date {
+                font-size: 12px;
+                font-weight: 300;
+                //line-height: 60px;
+                color: $cabinet-color;
+                opacity: 0.66;
+                margin-bottom: 13px;
+            }
+            .cabinet__adress {
+                color: $cabinet-color;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 30px;
+                .cabinet__adress-icon {
+                    margin: 0 20px;
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}
+
+// responsive private cabinet
+@media screen and (max-width: 990px) {
+    .cabinet {
+        padding: 53px 0 15px;
+        .cabinet__main {
+            .cabinet__item {
+                margin-bottom: 45px;
+                .cabinet__adress {
+                    font-size: 14px;
+                }   
+            }
+        }
+        .cabinet__sidebar {
+            width: 168px;
+            .cabinet__list {
+                .cabinet__list-item {
+                    margin-bottom: 25px;
+                    .cabinet__list-link {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cabinet {
+        flex-direction: column;
+        .cabinet__sidebar {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            padding-bottom: 10px;
+        }
+        .cabinet__main {
+            margin-top: 25px;
+        }
+    }
+}

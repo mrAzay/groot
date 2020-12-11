@@ -1,0 +1,510 @@
+@import "./main.scss";
+
+.clients-page {
+    position: relative;
+    background-image: url('../img/bg-road-3.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right -110px; 
+}
+.info__img, .advances__icon, .business__img {
+    // convert to #ffa800 color
+    filter: invert(69%) sepia(13%) saturate(6406%) hue-rotate(360deg) brightness(104%) contrast(102%);
+}
+.info {
+    max-width: 645px;
+    margin-top: 100px;
+    .info__title {
+        position: relative;
+        font-size: 55px;
+        font-weight: 900;
+        z-index: 10;
+        &::after {
+            content: url('../img/bulbs.png');
+            position: absolute;
+            left: -50px;
+            top: -30px;
+            z-index: -1;
+        }
+    }
+    .info__subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 45px;
+        line-height: 18px;
+    }
+    .info__buttons {
+        display: flex;
+        margin: 45px 0 50px;
+        .show-more-btn {
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        .common-btn {
+            padding: 15px 35px;
+        }
+    }
+    .info__items {
+        display: flex;
+        justify-content: space-between;
+        .info__item {
+            width: 31%;
+            .info__item-title {
+                font-size: 14px;
+                font-weight: 900;
+                margin: 15px 0;               
+            }
+            .info__item-text {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;  
+            }
+        }
+    }
+    .info__bus-img {
+        position: absolute;
+        right: -200px;
+        top: 150px;
+    }
+}
+// responsive info
+@media screen and (max-width: 1228px) {
+    .info {
+        max-width: 430px;
+        .info__title {
+            font-size: 36px;
+        }
+        .info__subtitle {
+            font-size: 12px;
+        }
+        .info__buttons {
+            margin: 30px 0 35px;
+        }
+        .info__items {
+            .info__item {
+                .info__item-text {
+                    font-size: 11px;
+                }
+            }
+        }
+        .info__bus-img {
+            height: 263px;
+            top: 200px;
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .info { 
+        .info__bus-img {
+            height: 216px;
+            right: -330px;
+            top: 200px;
+        }
+    }
+}
+@media screen and (max-width: 568px) {
+    .info {
+        .info__title, .info__subtitle, .info__buttons {
+            max-width: 60%;
+        }
+        .info__buttons {
+            flex-direction: column;
+            align-items: flex-start;
+            .info__register {
+                font-size: 12px;
+                padding: 13px 30px;
+                margin: 12px 0 0;
+            }
+            .info__left-order {
+                padding: 15px 25px;
+            }
+        }
+        .info__items {
+            flex-direction: column;
+            .info__item {
+                width: 100%;
+                .info__item-text {
+                    line-height: 14px;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+.clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0 60px;
+    position: relative;
+    &::after {
+        content: url('../img/bulbs.png');
+        position: absolute;
+        right: -40px;
+        top: 35%;
+        z-index: -1;
+    }
+    .clients__caption {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .clients__images {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        justify-content: space-between;
+    }
+}
+// responsive clients
+@media screen and (max-width: 990px) {
+    .clients {
+        .clients__images {
+            width: 80%;
+            .clients__img:last-child {
+                display: none;
+            }
+        }
+        .clients__caption {
+            font-size: 18px;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .clients {
+        flex-direction: column;
+        align-items: flex-start;
+        .clients__images {
+            margin-top: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+            .clients__img:last-child {
+                display: block;
+            }
+        }
+    }
+}
+.advances {
+    display: flex;
+    position: relative;
+    .advances__column {
+        padding: 100px 0;
+        flex: 50%;
+        display: flex;
+        box-sizing: border-box;
+        .container {
+            max-width: 615px;
+        }
+        &:first-child {
+            align-items: flex-end;
+            background: url('../img/bg-cube-3.png') -100px 80px no-repeat, #f6f8f7;
+            position: relative;
+            .container {
+                margin-right: 0;
+            }
+        }
+        &:nth-child(2) {
+            background: url('../img/bg-cube-2.png') right 70px bottom 50px no-repeat,$button-color;
+            padding-left: 250px;
+            .container {
+                margin-left: 0;
+            }
+        }
+    }
+    .advances__title {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+    .advances__text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        max-width: 90%;
+    }
+    .advances__items {
+        .advances__item {
+            position: relative;
+            display: flex;
+            
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+            .advances__img-wrapper {
+                margin-right: 20px;
+            }
+            .advances__item-subtitle {
+                font-size: 14px;
+                font-weight: 900;
+                color: white;
+                margin-bottom: 15px;
+            }
+            .advances__item-text {
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 18px;
+                color: white;
+                max-width: 275px;
+            }
+            .advances__img-wrapper .advances__icon {
+                //content: url('../img/tracker.svg');
+                position: absolute;
+                left: -30px;
+            }
+        }
+    }
+    .advances__phone-img {
+        position: absolute;
+        right: -140px;
+        top: 50px;
+    }
+}
+// responsive advances
+@media screen and (max-width: 1068px) {
+    .advances {
+        .advances__column:nth-child(1) {
+            background: url('../img/bg-cube-3.png') -250px 80px no-repeat, #f6f8f7;
+        }
+        .advances__column:nth-child(2) {
+            background: url('../img/bg-cube-2.png') right -100px bottom 50px no-repeat,$button-color;
+            padding: 100px 0 100px 120px;
+        }
+        .advances__column {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .advances__phone-img {
+                width: 159px;
+                right: -70px;
+                top: 100px;
+            }
+            .advances__text {
+                max-width: 70%;
+                font-size: 14px;
+            }
+            .advances__title {
+                font-size: 26px;
+                max-width: 80%
+            }   
+            .advances__items {
+                .advances__item {
+                    .advances__img-wrapper {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 728px) {
+    .advances {
+        flex-direction: column;
+        .advances__column, .advances__column:nth-child(2) {
+            padding: 37px 15px 30px;
+            .container {
+                max-width: 100%;
+            }
+            .advances__phone-img {
+                top: 50px;
+                right: -70px;
+            }
+            .advances__title {
+                font-size: 24px;
+            }
+            .advances__text {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+        .advances__items {
+            margin-left: 30px;
+            max-width: 100%;
+            .advances__item {
+                .advances__item-text {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.business {
+    padding: 60px 0 75px;
+    background: #f6f8f7;
+    .business__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .business__items {
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .business__item {
+            width: 30%;
+            padding: 50px 40px 40px;
+            border-radius: 10px;
+            border: 1px solid $button-color;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+
+            .business__img {
+                margin-right: 20px;
+            }
+            .business__item-title {
+                font-size: 16px;
+                font-weight: 900;
+            }
+            .business__item-count {
+                font-size: 11px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+// responsive business
+@media screen and (max-width: 990px) {
+    .business {
+        padding: 44px 0;
+        .business__subtitle {
+            font-size: 14px;
+        }
+        .business__items {
+            .business__item {
+                padding: 25px;
+                align-items: start;
+                .business__img {
+                    margin-right: 10px;
+                }
+                .business__item-title {
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 728px) {
+    .business {
+        padding: 40px 0;
+        .business__items {
+            flex-direction: column;
+            .business__item {
+                width: 100%;
+                .business__item-title {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+.table-block {
+    padding: 85px 0;
+    background: url('../img/bg-road-2.png') 0 -230px no-repeat,
+                url('../img/bg-cube-3.png') right 80px bottom 10px no-repeat;
+
+    .table-block__table {
+        empty-cells: hide;
+        max-width: 1000px;
+        margin: 45px auto 0;
+        width: 100%;      
+        border: 1px solid $button-color;
+        background-color: #ffffff;
+        tr {
+            th, td {
+                padding: 0 30px;
+                height: 80px;
+                vertical-align: middle;
+                text-align: center;
+                border-bottom: 1px solid #d8d7d7; 
+            }
+            th:first-child,
+            td:first-child {
+                width: 34%;
+                background: rgba(136,136,136, 0.06);
+                border-right: 1px solid #d8d7d7;
+            }
+            th:nth-child(3),
+            td:nth-child(3) {
+                border-left: 1px solid #d8d7d7;
+            }
+            th:nth-child(3),
+            td:nth-child(3) {
+                width: 35%;
+                background: #f6faf5;
+            }
+            .table-block__caption {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .table-block__img {
+                //to color #32b649
+                filter: invert(51%) sepia(58%) saturate(576%) hue-rotate(79deg) brightness(103%) contrast(87%);
+                margin-right: 15px;
+            }
+            .table-block__item {
+                display: flex;
+                align-items: center;
+                padding-left: 55px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .table-block__no {
+                // to color #e61212
+                filter: invert(12%) sepia(100%) saturate(7485%) hue-rotate(4deg) brightness(99%) contrast(86%);
+            }
+            .table-block__yes {
+                //to color #6db451
+                filter: invert(67%) sepia(48%) saturate(474%) hue-rotate(58deg) brightness(86%) contrast(87%);
+            }
+        }
+    }
+}
+
+// resposnive .table-block
+@media screen and (max-width: 990px) {
+    .table-block {
+        background: url('../img/bg-road-2.png') 0 -230px no-repeat;
+        .table-block__table {
+            tr {
+                .table-block__item {
+                    padding-left: 0;
+                }
+                .table-block__caption {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .table-block {
+        padding: 35px 0;
+        .table-block__table {
+            .table-block__logo {
+                width: 90px;
+            }
+            tr .table-block__caption {
+                font-size: 12px;
+            }
+            .table-block__item {
+                justify-content: center;
+                .table-block__img {
+                    margin-right: 0;
+                }
+                span {
+                    display: none;
+                }
+            }
+            tr th, tr td {
+                padding: 0 5px;
+            }
+        }
+    }
+}
