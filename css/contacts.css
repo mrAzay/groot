@@ -1,0 +1,139 @@
+.header {
+    position: inherit;
+}
+
+.header .header__phones .header__phone {
+    font-weight: normal;
+    color: #424242;
+}
+
+.header .header__phones .header__phone span {
+    color: #424242;
+}
+
+.header .header__login .header__login-btn {
+    color: #6DB351;
+}
+
+.header__icons a {
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+.header__icons a:hover {
+    opacity: 1;
+}
+
+.header .header__nav-wrapper {
+    background: none;
+}
+
+.header .header__nav-wrapper .header__nav li a {
+    color: #424242;
+    padding: 20px 4px;
+}
+
+.main__heading {
+    color: #424242;
+    font-family: "Gilroy", sans-serif;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 29px;
+    margin-bottom: 72px;
+}
+
+.main__heading span {
+    font-weight: 800;
+}
+
+.about__header {
+    font-family: "Gilroy", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #424242;
+    margin-bottom: 42px;
+}
+
+.greenLink {
+    font-family: "Gilroy", sans-serif;
+    font-size: 24px;
+    color: #6DB351;
+    text-decoration: none;
+    display: block;
+}
+
+.greenLink.mb {
+    margin-bottom: 20px;
+}
+
+.linkHeading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #424242;
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+
+.linkList {
+    list-style: none;
+}
+
+.linkList__item {
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 100px;
+    border-top: none;
+    background: none;
+}
+
+.footer .footer__nav li a,
+.footer__title,
+.footer__company .footer__text,
+.footer .footer__nav .footer__nav-marker {
+    color: #424242;
+}
+
+.footer__nav a {
+    font-weight: normal;
+}
+
+.footer__icons a {
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+.footer__icons a:hover {
+    opacity: 1;
+}
+
+.footer__contacts .footer__nav li:not(:last-child) a {
+    font-weight: normal !important;
+}
+
+.footer__icons a:last-child {
+    display: inline-block !important;
+}
+
+@media (max-width: 1130px) {
+    .footer {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .about__header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .main__heading {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 500px) {
+    .greenLink,
+    .linkHeading {
+        text-align: center;
+    }
+}
