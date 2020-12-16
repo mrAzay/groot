@@ -18,6 +18,10 @@ button {
   overflow-x: hidden;
 }
 
+.content > .error-page{
+  padding-top: 180px;
+}
+
 .show-more-btn {
   transition: 0.3s ease;
   text-decoration: none;

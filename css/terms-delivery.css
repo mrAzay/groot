@@ -1,37 +1,3 @@
-.header {
-    position: inherit;
-}
-
-.header .header__phones .header__phone {
-    font-weight: normal;
-    color: #424242;
-}
-
-.header .header__phones .header__phone span {
-    color: #424242;
-}
-
-.header .header__login .header__login-btn {
-    color: #6DB351;
-}
-
-.header__icons a {
-    opacity: .7;
-    transition: opacity .3s;
-}
-
-.header__icons a:hover {
-    opacity: 1;
-}
-
-.header .header__nav-wrapper {
-    background: none;
-}
-
-.header .header__nav-wrapper .header__nav li a {
-    color: #424242;
-    padding: 20px 4px;
-}
 
 .main__heading {
     color: #424242;
@@ -44,6 +10,9 @@
 
 .main__heading span {
     font-weight: 800;
+}
+.wrapper > .container {
+    margin-top: 180px;
 }
 
 .about__header {

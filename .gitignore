@@ -3,8 +3,8 @@
 .LSOverride
 .vs
 
-node_modules/
 */node_modules/
-package.lock.json
-makets/
+node_modules/
+makets
 makets.zip
+package.lock.json
